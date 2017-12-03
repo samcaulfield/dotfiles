@@ -1,0 +1,4 @@
+xterm*reverseVideo: true
+xterm*font: -adobe-courier-medium-r-normal--14-100-100-100-m-90-iso8859-10
+xterm*selectToClipboard: true
+
