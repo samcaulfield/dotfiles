@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 colorscheme industry
 
 " Highlight trailing whitespace
