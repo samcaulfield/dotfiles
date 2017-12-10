@@ -11,6 +11,6 @@ if [ ! -d ~/.vimrc ]; then
 	mkdir -p ~/.vim/bundle;
 fi
 
-wget https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim  -P ~/.vim/autoload
+wget -nc https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim  -P ~/.vim/autoload
 git clone https://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
 
