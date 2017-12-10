@@ -5,7 +5,7 @@ ln -s $(pwd)/.vimrc ~/.vimrc
 ln -s $(pwd)/.xinitrc ~/.xinitrc
 ln -s $(pwd)/.Xresources ~/.Xresources
 
-if [ [! -d ~/.vimrc ]; then
+if [ ! -d ~/.vimrc ]; then
 	mkdir -p ~/.vim;
 	mkdir -p ~/.vim/autoload;
 	mkdir -p ~/.vim/bundle;
