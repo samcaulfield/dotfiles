@@ -54,5 +54,3 @@ autocmd InsertLeave * highlight CursorColumn ctermbg=DarkGray
 " before the above InsertLeave triggers
 set timeoutlen=1000 ttimeoutlen=0
 
-hi CursorLine cterm=none
-
