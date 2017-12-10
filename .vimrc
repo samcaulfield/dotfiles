@@ -50,7 +50,7 @@ autocmd InsertEnter * highlight CursorColumn ctermbg=Gray
 autocmd InsertLeave * highlight CursorLine cterm=none ctermbg=DarkGray
 autocmd InsertLeave * highlight CursorColumn ctermbg=DarkGray
 
-" Eliminate the delay when exiting insert mode. Without this, there's a delay
+" Reduce the delay when exiting insert mode. Without this, there's a delay
 " before the above InsertLeave triggers
-set timeoutlen=1000 ttimeoutlen=0
+set ttimeoutlen=30
 
