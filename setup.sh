@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ln -s $(pwd)/newl.sh ~/newl
+[ ! -d ~/.config ] && mkdir ~/.config
 ln -s $(pwd)/user-dirs.dirs ~/.config/user-dirs.dirs
 ln -s $(pwd)/.vimrc ~/.vimrc
 ln -s $(pwd)/.xinitrc ~/.xinitrc
