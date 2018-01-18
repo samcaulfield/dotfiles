@@ -21,6 +21,9 @@ set cc=81
 " Don't run searches into folded text
 set fdo-=search
 
+" Disable automatic insertion of additional lines of comments
+set formatoptions-=cro
+
 " Use space key to toggle folds
 nnoremap <space> za
 
