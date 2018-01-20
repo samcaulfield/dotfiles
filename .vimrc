@@ -7,8 +7,9 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
-" Display tabs 8 characters wide
+" Set the visual width of tabs, measured in character widths
 autocmd Filetype c setlocal tabstop=8
+autocmd Filetype html setlocal tabstop=2
 
 " Easier exit from insert mode
 inoremap kj <ESC>
