@@ -10,6 +10,7 @@ match ExtraWhitespace /\s\+$/
 " Set the visual width of tabs, measured in character widths
 autocmd Filetype c setlocal tabstop=8
 autocmd Filetype html setlocal tabstop=2
+autocmd Filetype html setlocal shiftwidth=2
 
 " Easier exit from insert mode
 inoremap kj <ESC>
@@ -25,6 +26,9 @@ nnoremap <space> za
 
 " Use syntax highlighting elements for folding
 set foldmethod=syntax
+
+" Use indentation for folding HTML
+autocmd Filetype html setlocal foldmethod=indent
 
 " Disable automatic folding
 set foldlevelstart=99
