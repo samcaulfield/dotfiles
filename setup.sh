@@ -15,4 +15,12 @@ fi
 
 wget -nc https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim  -P ~/.vim/autoload
 git clone https://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
+git clone https://github.com/nvie/vim-flake8.git ~/.vim/bundle/vim-flake8
+
+if [ ! -d ~/.config ]; then
+	mkdir ~/.config;
+fi
+
+echo "[flake8]
+max-line-length = 200" > ~/.config/flake8
 
