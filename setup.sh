@@ -24,3 +24,5 @@ fi
 echo "[flake8]
 max-line-length = 200" > ~/.config/flake8
 
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+
