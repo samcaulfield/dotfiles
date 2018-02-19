@@ -21,6 +21,9 @@ set cc=81
 " Don't run searches into folded text
 set fdo-=search
 
+" Add a kebinding to clear search highlights
+nnoremap <F3> :noh<CR>
+
 " Disable automatic insertion of additional lines of comments
 set formatoptions-=cro
 
