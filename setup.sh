@@ -6,6 +6,7 @@ ln -s $(pwd)/user-dirs.dirs ~/.config/user-dirs.dirs
 ln -s $(pwd)/.vimrc ~/.vimrc
 ln -s $(pwd)/.xinitrc ~/.xinitrc
 ln -s $(pwd)/.Xresources ~/.Xresources
+ln -s $(pwd)/.gitconfig ~/.gitconfig
 
 if [ ! -d ~/.vimrc ]; then
 	mkdir -p ~/.vim;

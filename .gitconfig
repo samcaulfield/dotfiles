@@ -1,0 +1,6 @@
+[alias]
+forcepush = push --force-with-lease
+vis = log --all --oneline --graph --decorate
+
+[core]
+editor = vim
