@@ -8,6 +8,7 @@ ln -s $(pwd)/.xinitrc ~/.xinitrc
 ln -s $(pwd)/.Xresources ~/.Xresources
 ln -s $(pwd)/.gitconfig ~/.gitconfig
 ln -s $(pwd)/.tmux.conf ~/.tmux.conf
+ln -s $(pwd)/awesome ~/.config/awesome
 
 mkdir -p ~/.vim/autoload;
 mkdir -p ~/.vim/bundle;
