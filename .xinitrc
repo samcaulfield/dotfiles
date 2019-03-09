@@ -1,4 +1,4 @@
-[[ -f ~/.Xresources ]] && xrdb -merge ~/dotfiles/.Xresources
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 setxkbmap ie
 
