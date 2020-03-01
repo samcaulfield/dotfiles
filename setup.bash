@@ -10,8 +10,8 @@ ln -s $(pwd)/.gitconfig ~/.gitconfig
 ln -s $(pwd)/.tmux.conf ~/.tmux.conf
 ln -s $(pwd)/awesome ~/.config/awesome
 
-mkdir -p ~/.vim/autoload;
-mkdir -p ~/.vim/bundle;
+mkdir -p ~/.vim/autoload
+mkdir -p ~/.vim/bundle
 
 wget -nc https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim  -P ~/.vim/autoload
 git clone https://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
