@@ -1,5 +1,6 @@
 [alias]
 forcepush = push --force-with-lease
+remind = diff HEAD~ HEAD
 vis = log --all --oneline --graph --decorate
 
 [core]
