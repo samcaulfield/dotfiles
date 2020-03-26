@@ -9,8 +9,11 @@ match ExtraWhitespace /\s\+$/
 
 " Set the visual width of tabs, measured in character widths
 autocmd Filetype c setlocal tabstop=8
+
+autocmd Filetype html setlocal expandtab
 autocmd Filetype html setlocal tabstop=2
 autocmd Filetype html setlocal shiftwidth=2
+autocmd Filetype py setlocal tabstop=4
 
 " Easier exit from insert mode
 inoremap kj <ESC>
