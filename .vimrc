@@ -18,9 +18,6 @@ autocmd Filetype py setlocal tabstop=4
 " Easier exit from insert mode
 inoremap kj <ESC>
 
-" Vertical red line at column 81
-set cc=81
-
 " Don't run searches into folded text
 set fdo-=search
 
