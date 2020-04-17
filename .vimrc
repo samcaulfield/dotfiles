@@ -13,6 +13,13 @@ autocmd Filetype c setlocal tabstop=8
 autocmd Filetype html setlocal expandtab
 autocmd Filetype html setlocal tabstop=2
 autocmd Filetype html setlocal shiftwidth=2
+
+"
+" Git commits
+"
+autocmd FileType gitcommit setlocal tw=72
+autocmd FileType gitcommit setlocal cc=+1
+
 autocmd Filetype py setlocal tabstop=4
 
 " Easier exit from insert mode
