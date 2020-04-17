@@ -7,12 +7,24 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
-" Set the visual width of tabs, measured in character widths
+"-------------------------------------------------------------------------------
+"
+" Filetype-specific settings
+"
+"
+
+"
+" C
+"
 autocmd Filetype c setlocal tabstop=8
 
+"
+" HTML
+"
 autocmd Filetype html setlocal expandtab
-autocmd Filetype html setlocal tabstop=2
+autocmd Filetype html setlocal foldmethod=indent
 autocmd Filetype html setlocal shiftwidth=2
+autocmd Filetype html setlocal tabstop=2
 
 "
 " Git commits
@@ -20,7 +32,16 @@ autocmd Filetype html setlocal shiftwidth=2
 autocmd FileType gitcommit setlocal tw=72
 autocmd FileType gitcommit setlocal cc=+1
 
+"
+" Python
+"
 autocmd Filetype py setlocal tabstop=4
+
+"
+"
+" End of filetype-specific settings
+"
+"-------------------------------------------------------------------------------
 
 " Easier exit from insert mode
 inoremap kj <ESC>
@@ -39,9 +60,6 @@ nnoremap <space> za
 
 " Use syntax highlighting elements for folding
 set foldmethod=syntax
-
-" Use indentation for folding HTML
-autocmd Filetype html setlocal foldmethod=indent
 
 " Disable automatic folding
 set foldlevelstart=99
