@@ -27,8 +27,11 @@ autocmd Filetype html setlocal tabstop=2
 "
 " Git commits
 "
+
+" Add colourcolumns to indicate the conventional line length limits (50 for title, 72 for body).
 autocmd FileType gitcommit setlocal tw=72
 autocmd FileType gitcommit setlocal cc=+1
+autocmd FileType gitcommit setlocal cc+=51
 
 "
 " Python
