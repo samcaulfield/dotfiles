@@ -34,6 +34,13 @@ autocmd FileType gitcommit setlocal cc=+1
 autocmd FileType gitcommit setlocal cc+=51
 
 "
+" JSON
+"
+
+autocmd FileType json setlocal shiftwidth=2
+autocmd FileType json setlocal tabstop=2
+
+"
 " Python
 "
 autocmd Filetype py setlocal tabstop=4
