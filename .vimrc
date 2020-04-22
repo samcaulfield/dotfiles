@@ -17,6 +17,12 @@ match ExtraWhitespace /\s\+$/
 autocmd Filetype c setlocal tabstop=8
 
 "
+" C++
+"
+autocmd Filetype cpp setlocal tabstop=4
+autocmd Filetype cpp setlocal shiftwidth=4
+
+"
 " HTML
 "
 autocmd Filetype html setlocal expandtab
