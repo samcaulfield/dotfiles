@@ -1,6 +1,12 @@
 #!/bin/bash
 
 #
+# Configure Bash
+#
+
+echo "export PATH=$HOME/dotfiles:$PATH" >> $HOME/.bashrc
+
+#
 # Configure Git
 #
 
