@@ -40,6 +40,13 @@ autocmd FileType gitcommit setlocal cc=+1
 autocmd FileType gitcommit setlocal cc+=51
 
 "
+" JavaScript
+"
+autocmd Filetype javascript setlocal expandtab
+autocmd Filetype javascript setlocal shiftwidth=2
+autocmd Filetype javascript setlocal tabstop=2
+
+"
 " JSON
 "
 
@@ -50,6 +57,20 @@ autocmd FileType json setlocal tabstop=2
 " Python
 "
 autocmd Filetype py setlocal tabstop=4
+
+"
+" Rust
+"
+autocmd Filetype rust setlocal expandtab
+autocmd Filetype rust setlocal tabstop=4
+autocmd Filetype rust setlocal shiftwidth=4
+
+"
+" YAML
+"
+autocmd Filetype yaml setlocal expandtab
+autocmd Filetype yaml setlocal tabstop=2
+autocmd Filetype yaml setlocal shiftwidth=2
 
 "
 "
