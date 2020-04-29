@@ -9,3 +9,5 @@ vis = log --all --oneline --graph --decorate
 [core]
 editor = vim
 pager = "delta --dark --file-color=green --hunk-color=green"
+[interactive]
+diffFilter = delta --color-only
