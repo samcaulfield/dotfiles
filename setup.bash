@@ -1,6 +1,12 @@
 #!/bin/bash
 
 #
+# Install packages
+#
+
+sudo apt install most unp
+
+#
 # Configure Bash
 #
 
