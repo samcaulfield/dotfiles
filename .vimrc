@@ -12,6 +12,14 @@ match ExtraWhitespace /\s\+$/
 "
 
 "
+" Bash
+"
+
+autocmd Filetype bash setlocal expandtab
+autocmd Filetype bash setlocal shiftwidth=2
+autocmd Filetype bash setlocal tabstop=2
+
+"
 " C
 "
 autocmd Filetype c setlocal tabstop=8
