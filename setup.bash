@@ -22,7 +22,8 @@ cp delta-0.1.1-x86_64-unknown-linux-musl/delta $HOME/.local/bin
 # Configure Bash
 #
 
-echo "export PATH=$HOME/dotfiles:$PATH" >> $HOME/.bashrc
+ln -s $(pwd)/.bashrc $HOME/.bashrc
+echo "export PATH=$(pwd):$PATH" >> $HOME/.bashrc
 
 #
 # Configure Git
