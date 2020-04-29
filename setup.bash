@@ -4,7 +4,19 @@
 # Install packages
 #
 
-sudo apt install most unp
+# An advanced pager that supports colours.
+sudo apt install most
+
+# A wrapper that provides a single interface to multiple unpacking tools.
+sudo apt install unp
+
+# A text-mode interface for Git.
+sudo apt install tig
+
+# A syntax highlighter for Git diffs.
+wget https://github.com/dandavison/delta/releases/download/0.1.1/delta-0.1.1-x86_64-unknown-linux-musl.tar.gz
+unp delta-0.1.1-x86_64-unknown-linux-musl.tar.gz
+cp delta-0.1.1-x86_64-unknown-linux-musl/delta $HOME/.local/bin
 
 #
 # Configure Bash
