@@ -4,7 +4,7 @@ forcepush = push --force-with-lease
 oops = commit --amend --no-edit
 remind = diff HEAD~ HEAD
 staged = diff --staged
-vis = log --all --oneline --graph --decorate
+vis = log --remotes --branches --tags --oneline --graph --decorate
 
 [core]
 editor = vim
