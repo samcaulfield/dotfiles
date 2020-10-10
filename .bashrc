@@ -5,6 +5,14 @@
 alias grep="grep --color=auto"
 alias ls="ls --color=auto"
 
+git() {
+  if [[ $@ == "add" ]]; then
+    command git add --verbose
+  else
+    command git "$@"
+  fi
+}
+
 #
 # Environment Variables
 #
