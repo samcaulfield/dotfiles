@@ -5,6 +5,10 @@
 alias grep="grep --color=auto"
 alias ls="ls --color=auto"
 
+cd() {
+  builtin cd "$@" && ls;
+}
+
 git() {
   if [[ $@ == "add" ]]; then
     command git add --verbose
@@ -30,10 +34,6 @@ PROMPT_COMMAND=setPrompt
 #
 # Functions
 #
-
-cd() {
-  builtin cd "$@" && ls;
-}
 
 setPrompt() {
   local EXIT_STATUS="$?"
