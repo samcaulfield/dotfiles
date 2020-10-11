@@ -4,6 +4,9 @@
 # Install packages
 #
 
+# More advanced auto-completion for Bash.
+apt install bash-completion
+
 # An advanced pager that supports colours.
 sudo apt install most
 
