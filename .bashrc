@@ -30,6 +30,9 @@ git() {
 export EDITOR=vim
 export MANPAGER=most
 
+# Exiting shells append to the history file instead of overwriting.
+shopt -s histappend
+
 #
 # Bash Variables
 #
