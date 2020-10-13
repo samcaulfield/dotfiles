@@ -18,6 +18,8 @@ cd() {
 git() {
   if [[ $@ == "add" ]]; then
     command git add --verbose
+  elif [[ $@ == "clone" ]]; then
+    command git clone --recursive
   else
     command git "$@"
   fi
