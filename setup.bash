@@ -27,7 +27,7 @@ cp delta-0.4.3-x86_64-unknown-linux-musl/delta $HOME/.local/bin
 #
 
 ln -s $(pwd)/.bashrc $HOME/.bashrc
-echo "export PATH=$HOME/.local/bin:$(pwd):\"$PATH\"" >> $HOME/.bashrc
+echo "export PATH=$(pwd)/scripts:$HOME/.local/bin:$(pwd):\"$PATH\"" >> $HOME/.bashrc
 
 #
 # Configure Git

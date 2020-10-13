@@ -10,6 +10,7 @@ source /etc/profile.d/bash_completion.sh
 
 alias grep="grep --color=auto"
 alias ls="ls --color=auto"
+alias termtitle="set_terminal_title.bash"
 
 cd() {
   builtin cd "$@" && ls;
