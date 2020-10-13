@@ -3,6 +3,7 @@
 	forcepush = push --force-with-lease
 	oops = commit --amend --no-edit
 	remind = diff HEAD~ HEAD
+	size = !git gc --quiet && git count-objects -vH | grep size-pack
 	staged = diff --staged
 	vis = log --remotes --branches --tags --oneline --graph --decorate
 
