@@ -37,13 +37,16 @@ export MANPAGER=most
 shopt -s histappend
 
 #
-# Bash Variables
+# Bash variables and settings
 #
 
 HISTCONTROL=ignoreboth
 PROMPT_COMMAND=setPrompt
 HISTSIZE=1000
 HISTFILESIZE=1000
+
+# Automatically fix minor spelling errors when issuing the `cd` command.
+shopt -s cdspell
 
 #
 # Functions
