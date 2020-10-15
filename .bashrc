@@ -42,6 +42,8 @@ shopt -s histappend
 
 HISTCONTROL=ignoreboth
 PROMPT_COMMAND=setPrompt
+HISTSIZE=1000
+HISTFILESIZE=1000
 
 #
 # Functions
