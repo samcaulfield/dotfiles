@@ -10,6 +10,7 @@ source /etc/profile.d/bash_completion.sh
 
 alias grep="grep --color=auto"
 alias ls="ls --color=auto"
+alias termtitle="set_terminal_title.bash"
 
 cd() {
   builtin cd "$@" && ls;
@@ -18,6 +19,8 @@ cd() {
 git() {
   if [[ $@ == "add" ]]; then
     command git add --verbose
+  elif [[ $@ == "clone" ]]; then
+    command git clone --recursive
   else
     command git "$@"
   fi
@@ -34,11 +37,17 @@ export MANPAGER=most
 shopt -s histappend
 
 #
-# Bash Variables
+# Bash variables and settings
 #
 
 # Don't add duplicate commands and commands beginning with spaces to the history.
 HISTCONTROL=ignoreboth
+
+HISTSIZE=1000
+HISTFILESIZE=1000
+
+# Automatically fix minor spelling errors when issuing the `cd` command.
+shopt -s cdspell
 
 PROMPT_COMMAND=set_prompt
 
