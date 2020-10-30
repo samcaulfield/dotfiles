@@ -37,18 +37,20 @@ shopt -s histappend
 # Bash Variables
 #
 
+# Don't add duplicate commands and commands beginning with spaces to the history.
 HISTCONTROL=ignoreboth
-PROMPT_COMMAND=setPrompt
+
+PROMPT_COMMAND=set_prompt
 
 #
 # Functions
 #
 
-setPrompt() {
+set_prompt() {
   local EXIT_STATUS="$?"
   declare -r GREEN="\e[0;32m"
   declare -r RED="\e[0;31m"
-  declare -r RESET="\e[0m"
+  declare -r RESET_COLOUR="\e[0m"
 
   PS1=""
   PS1+=`dirs`
@@ -61,7 +63,7 @@ setPrompt() {
     else
       PS1+="$GREEN"
     fi
-    PS1+=" ($BRANCH_NAME)$RESET"
+    PS1+=" ($BRANCH_NAME)$RESET_COLOUR"
   fi
 
   if [ "$EXIT_STATUS" == "0" ]; then
@@ -71,5 +73,6 @@ setPrompt() {
   fi
 
   PS1+=" > "
-  PS1+="$RESET"
+  PS1+="$RESET_COLOUR"
 }
+
