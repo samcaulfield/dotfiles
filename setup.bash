@@ -50,6 +50,13 @@ git clone https://github.com/preservim/nerdtree.git $VIM_PACKAGES_DIR/nerdtree
 ( cd $VIM_PACKAGES_DIR/nerdtree && git checkout 6.7.7 )
 
 #
+# Configure Visual Studio Code
+#
+
+mkdir -p $HOME/.config/Code/User
+ln -s $(pwd)/vscode/settings.json $HOME/.config/Code/User/settings.json
+
+#
 # Configure X
 #
 
