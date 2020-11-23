@@ -57,9 +57,9 @@ PROMPT_COMMAND=set_prompt
 
 set_prompt() {
   local EXIT_STATUS="$?"
-  declare -r GREEN="\e[0;32m"
-  declare -r RED="\e[0;31m"
-  declare -r RESET_COLOUR="\e[0m"
+  declare -r GREEN="\[\e[0;32m\]"
+  declare -r RED="\[\e[0;31m\]"
+  declare -r RESET_COLOUR="\[\e[0m\]"
 
   PS1=""
   PS1+=`dirs`
