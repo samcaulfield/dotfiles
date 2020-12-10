@@ -64,7 +64,10 @@ set_prompt() {
   PS1=""
   PS1+=`dirs`
 
-  if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" == "true" ]; then
+  # Returns 0 if this is a Git repository, nonzero otherwise.
+  git rev-parse HEAD &> /dev/null
+
+  if [ $? -eq 0 ]; then
     declare -r BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD)"
     declare -r HAS_CHANGES="$(git status --porcelain --untracked-files=no)"
     if [[ $HAS_CHANGES ]]; then
