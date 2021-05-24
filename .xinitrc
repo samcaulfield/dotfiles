@@ -3,4 +3,3 @@
 setxkbmap ie
 
 exec gnome-session
-

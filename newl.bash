@@ -13,4 +13,3 @@ fi
 for ((i = 1; i <= $numNewlines; i++)); do
 	echo
 done
-

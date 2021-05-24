@@ -5,7 +5,10 @@
 #
 
 # More advanced auto-completion for Bash.
-apt install bash-completion
+sudo apt install bash-completion
+
+# A visual diff tool.
+sudo apt install meld
 
 # An advanced pager that supports colours.
 sudo apt install most

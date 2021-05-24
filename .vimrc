@@ -132,4 +132,3 @@ autocmd InsertLeave * highlight CursorColumn cterm=bold ctermbg=none
 " Reduce the delay when exiting insert mode. Without this, there's a delay
 " before the above InsertLeave triggers
 set ttimeoutlen=30
-
