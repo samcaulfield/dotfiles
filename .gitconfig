@@ -1,3 +1,9 @@
+[delta]
+	side-by-side = true
+
+[merge]
+	conflictstyle = diff3
+
 [alias]
 	firstdiff = diff 4b825dc642cb6eb9a060e54bf8d69288fbee4904 HEAD
 	forcepush = push --force-with-lease
