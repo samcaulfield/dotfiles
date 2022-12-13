@@ -1,5 +1,11 @@
 {
     "editor.mouseWheelZoom": true,
     "workbench.colorTheme": "Default Light+",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "workbench.editor.wrapTabs": true,
+    "C_Cpp.inactiveRegionOpacity": 0.2,
+    "editor.guides.bracketPairs": true,
+    "workbench.tree.indent": 16,
+    "editor.minimap.enabled": false
 }
