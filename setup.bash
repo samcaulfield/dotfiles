@@ -20,10 +20,8 @@ sudo apt install unp
 sudo apt install tig
 
 # A syntax highlighter for Git diffs.
-wget https://github.com/dandavison/delta/releases/download/0.4.3/delta-0.4.3-x86_64-unknown-linux-musl.tar.gz
-unp delta-0.4.3-x86_64-unknown-linux-musl.tar.gz
-mkdir -p $HOME/.local/bin
-cp delta-0.4.3-x86_64-unknown-linux-musl/delta $HOME/.local/bin
+wget https://github.com/dandavison/delta/releases/download/0.12.1/git-delta_0.12.1_amd64.deb
+sudo dpkg -i git-delta_0.12.1_amd64.deb
 
 #
 # Configure Bash

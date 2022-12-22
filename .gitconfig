@@ -15,7 +15,7 @@
 
 [core]
 	editor = vim
-	pager = "delta --dark --file-color=green --hunk-color=green"
+	pager = "delta --dark"
 
 [interactive]
 	diffFilter = delta --color-only
